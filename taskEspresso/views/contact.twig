@@ -1,6 +1,17 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-  <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+  <h1>Contactez-nous</h1>
+ <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/pierre.jean.mercer@gmail.com" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nom et prénom</label>
+    <input type="text" name="name" id="full-name" required="">
+    <label for="email-address">Courriel</label>
+    <input type="email" name="_replyto" id="email-address" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Team Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Send Message">
+</form>
 {% endblock %}
