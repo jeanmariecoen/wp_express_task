@@ -1,0 +1,23 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <h1>{{title}}</h1>
+  <p>Voici nos {{title}}</p>
+
+  
+    <button class="all_tasks">Voir toutes les tâches</button>
+    
+    <p id="liste_taches"></p>
+    
+    <p></p>
+    <form action="#" method="POST">
+        Nouvelle tâche :<br>
+        <input type="text" id="titre_tache"><br>
+        Description :<br>
+        <input type="text" id="description_tache">
+        <input id="create_task" type="submit">
+      </form>
+      
+     <script src="/javascripts/ajax_get_all.js"></script>
+     <script src="/javascripts/ajax_create_task.js"></script>
+{% endblock %}

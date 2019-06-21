@@ -5,8 +5,13 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
+});
+
+router.get('/tasks', function(req, res, next) {
+  res.render('tasks', { title: 'Tâches' });
 });
 
 module.exports = router;
