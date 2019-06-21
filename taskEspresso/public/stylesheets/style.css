@@ -21,6 +21,15 @@ a {
   margin:5% 20%;
 }
 
+p .all_tasks {
+    display: inline-block;
+    padding:1rem;
+}
+
+.supprimer:hover {
+  cursor: pointer;
+}
+
 p.liste_taches_class {
   display: -webkit-flex; /* Safari */
   -webkit-align-items: center; /* Safari 7.0+ */
