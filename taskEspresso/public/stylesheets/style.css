@@ -5,6 +5,7 @@ body {
   margin-top:10rem;
   width:80%;
   margin:auto;
+  color:brown;
 }
 
 a {
@@ -14,19 +15,50 @@ a {
 .card {
   color: white;
   background-color: brown;
-  border-radius: 25%;
-  width:33%;
+  border-radius: 5% 5% 0 0;
+  width:100%;
   padding-top: 1rem;
+  margin:5% 20%;
 }
 
-p 
-{
-display: -webkit-flex; /* Safari */
+p.liste_taches_class {
+  display: -webkit-flex; /* Safari */
   -webkit-align-items: center; /* Safari 7.0+ */
   display: flex;
   align-items: center;
+
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;  
+  flex-wrap: wrap;
 }
 .card h2 {
   text-transform: uppercase;
 }
 
+button{
+  background-color: brown; 
+  color: white;  
+  padding: 2rem; 
+  font-size: 2rem;
+  border-style: solid;
+  border-width: 5px; 
+  border-color:white;
+  transition:.2s;
+}
+
+button:hover{
+  color: brown; 
+  background-color: white; 
+  cursor: pointer; 
+  border-color:brown;
+  transition:.2s;
+}
+
+#create_task {
+  color: brown; 
+  background-color: white; 
+  cursor: pointer; 
+  border-color:brown;
+  transition:.2s;
+}
