@@ -12,28 +12,28 @@
         <div class="flex-container">
           <!-- On veut un logo assez gros, dont la taille va diminuer au défilement (jusque barre nav vide) -->
           <div class="logo fl">
-            <h1>Voter ou ne pas voter</h1>
+            <h1>Task Espresso</h1>
           </div>
           <!-- (caché) image MENU BURGER (activateur) -->
-          <div id="menu-burger" class="menu-burger fr tablet1">
+          {# <div id="menu-burger" class="menu-burger fr tablet1">
             <img data-activate="modale-menu" class="activator" src="img/varia/menu-burger.svg" alt="bouton pour faire apparaître le menu"
               aria-controls="modale-menu">
-          </div>
+          </div> #}
           <!-- NAVIGATION PRINCIPALE -->
           <div id="menu-complet" class="menu-complet tablet1-hidden clearfix">
             <nav class="fr">
               <ul>
                 <li>
-                  <a href="#section1" class="nav-link button">Section 1</a>
+                  <a href="{{'tasks'}}" class="nav-link button">Tâches</a>
                 </li>
                 <li>
-                  <a href="#section2" class="nav-link button">Section 2</a>
+                  <a href="{{'documentation'}}" class="nav-link button">Documentation</a>
                 </li>
                 <li>
-                  <a href="#section3" class="nav-link button">Section 3</a>
+                  <a href="{{'equipe'}}" class="nav-link button">Tool & Team</a>
                 </li>
                 <li>
-                  <a href="#section4" class="nav-link button">Section 4</a>
+                  <a href="{{'contact'}}" class="nav-link button">Contact</a>
                 </li>
               </ul>
             </nav>

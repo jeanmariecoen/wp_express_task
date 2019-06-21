@@ -28,8 +28,7 @@ function mettreAjour()
             }
             else
             {
-               
-                    liste_taches.innerHTML += '<div class="card"><h2>' + myObj[0].post_title + '</h2><br><div style=width:100%;font-weight:100;font-size:1.2rem;background-color:#ffcc66;color:black;>' + myObj[0].post_content + '</div></div>';       
+                liste_taches.innerHTML += '<div class="card"><h2>' + myObj[0].post_title + '</h2><br><div style=width:100%;font-weight:100;font-size:1.2rem;background-color:#ffcc66;color:black;>' + myObj[0].post_content + '</div></div>';       
 
                 
             }
